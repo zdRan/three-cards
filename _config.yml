@@ -1,0 +1,27 @@
+# hello-MY theme config
+
+# Header Settings
+header:
+  favicon: "/images/favicon.jpg"
+  title: "Three Cards"
+  slogan: "一款迷你的 Material Design 风格的主题。整体代码不到 300 行，支持高度定制，是学习 hexo 主题开发的不二之选。"
+  menus:
+    - title: 首页
+      icon: home-outline
+      href: /
+  keywords: hexo theme,Material Design
+  siteVerification:
+    baidu: 
+    google:
+
+# footer Settings
+footer:
+  links:
+    - title: 我的GitHub
+      href: https://github.com/zdRan/three-cards
+
+  copyrightSince: 2023
+  icp: '<a href="http://www.miitbeian.gov.cn" rel="nofollow" style="color: white;">某ICP备xxxxxxxx号</a>'
+
+# blog license
+license: '版权声明：本博客所有文章除特别声明外，均采用 <a href="/creativecommons.html" target="_blank">CC BY-NC-SA 4.0 </a>许可协议。转载请注明出处！'

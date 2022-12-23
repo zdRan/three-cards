@@ -1,0 +1,39 @@
+<v-card tile elevation="24"  style="width: 80%; margin: 0 auto; text-align:center; background:rgba(0,0,0,0); margin-bottom: 3%;" gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)">
+	<v-img height="240" src="" class="white--text align-end" >
+		<v-card-title style="text-align: left; margin-left: 0.3%;"><%- theme.header.title%></v-card-title>
+		<v-card-text style="text-align: left;margin-left: 0.3%;" class="white--text">
+			<%- theme.header.slogan%>
+		</v-card-text>
+		<v-divider style="margin-left: 1.3%; margin-right: 1.3%;" class="success lighten-1"></v-divider>
+		<v-card-text style="text-align: left;" class="white--text">
+			<% if (site.categories && site.categories.length){ %>
+				<% site.categories.forEach(function(category){ %>	
+					<v-btn text class="white--text" style="text-transform:capitalize;" href="/categories/<%- category.name %>"><%- category.name %></v-btn>
+				<%});%>
+			<% } %>
+		</v-card-text>
+	</v-img>
+	<v-divider style="margin-left: 1.3%; margin-right: 1.3%;" class="success lighten-1"></v-divider>
+	<v-card-actions >
+		<% for (index in theme.header.menus){%>
+			<v-btn text x-large class="white--text" style="margin-left: 0.5%;margin-top:0.5%;margin-bottom: 0.5%;" href=<%- theme.header.menus[index].href %>>
+				<v-icon right>
+					mdi-<%-theme.header.menus[index].icon %>
+				</v-icon>
+				<%- theme.header.menus[index].title %>
+			</v-btn>
+		<%}%>
+		<v-spacer></v-spacer>
+		<v-btn text x-large class="white--text" style="margin-left: 0.5%;margin-top:0.5%;margin-bottom: 0.5%;">
+			<v-icon right>
+			mdi-draw-pen
+			</v-icon>
+			文章总数  
+	  	</v-btn >
+		<v-btn icon style="margin-right: 0.5%;margin-top:0.5%;margin-bottom: 0.5%;">
+			<v-avatar color="success" size="35" >
+				<span class="white--text"> <%- site.posts.length%> </span>
+			</v-avatar>
+		</v-btn>
+	  </v-card-actions>
+</v-card>

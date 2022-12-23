@@ -1,0 +1,46 @@
+<v-card tile max-width="100%" elevation="24" style="margin-bottom: 3%;" >
+    <v-img height="240" class="white--text align-end" src=<%="/random/material-"+randomNum()+".png"%> gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)">
+        <v-card-title style="text-align: left;margin-left: 0.6%;">
+            <span><%- page.title %></span>
+        </v-card-title>
+    <v-card-text style="text-align: left;margin-left: 0.8%;">
+        <%- page.description %>
+    </v-card-text>
+    <v-divider class="success lighten-1" style="margin-left:2%; margin-right: 2%;"></v-divider>
+    <v-card-actions style="text-align: left;" class="white--text" style="margin-left:2%; margin-right: 2%;">
+        <% if (page.keywords && page.keywords.length){ %>
+            <% for(key in page.keywords){ %>	
+                <v-btn text class="white--text" style="text-transform:capitalize;margin-left:0.5%;"><%- page.keywords[key] %></v-btn>
+            <%};%>
+        <% } %>
+        <v-spacer></v-spacer>
+		<v-btn text class="white--text" >
+			<v-icon right>
+			mdi-cursor-default-click-outline
+			</v-icon>
+			点击量
+	  	</v-btn >
+		<v-btn icon >
+			<v-avatar color="success" size="35" >
+				<span id = "busuanzi_value_page_pv" class="white--text"> <%- site.posts.length%> </span>
+			</v-avatar>
+		</v-btn>
+    </v-card-actions>
+    </v-img>    
+    <v-card-text>
+        <div id = "post_container" class="text-justify" style="padding-left: 2%;padding-right: 2%;padding-bottom: 2%">
+            <%- page.content %>
+        </div>
+    </v-card-text>
+    <v-divider class="success lighten-1" ></v-divider>
+    <v-card-text>
+        <v-alert style="margin-left:2%; margin-right: 2%;padding-top: 2%;padding-bottom: 2%;" dense text border="left" type="success">
+            <%- theme.license%>
+        </v-alert>
+    </v-card-text>
+</v-card>
+<% 
+    function randomNum(){
+        return Math.floor(Math.random() *  + 19) + 1;
+    }
+ %> 

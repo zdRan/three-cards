@@ -1,0 +1,89 @@
+#post_container h1 {
+    margin: 1em 0 15px;
+    color: #212121
+}
+#post_container h2 {
+    margin: 1em 0 15px;
+    color: #212121
+}
+
+#post_container h3 {
+    margin: 1em 0 15px;
+    color: #212121
+}
+
+#post_container h4 {
+    margin: 1em 0 15px;
+    color: #212121
+}
+
+#post_container h5 {
+    margin: 1em 0 15px;
+    color: #212121
+}
+
+#post_container h1 {
+    padding-bottom: 1%;
+    border-bottom: 1px solid #eee;
+    border-color: #4caf50;
+}
+
+#post_container h2 {
+    padding-bottom: 1%;
+    border-bottom: 1px solid #eee;
+    border-color: #4caf50;
+}
+#post_container img {
+    width: 100%;
+    border-color: #4caf50;
+    border: 1px solid #4caf50;
+}
+
+#post_container a:link {
+    color: #03A9F4;
+    text-decoration:none;
+}
+#post_container a:visited {
+    color:#4caf50;
+    text-decoration:none;
+}
+#post_container hr {
+    background-color: #4caf50;
+    border: none;
+    height:1px;
+}
+#post_container code {
+    margin-bottom: 1%;
+}
+
+#app {
+    background-image: url("/images/background.jpg");
+    background-size:100% 100%;
+    background-attachment:fixed 
+}
+
+#tagcloud {
+    padding:5%;
+    text-align: center;
+    background:rgba(76,175,80,0.2);
+}
+#tagcloud a:link {
+    text-transform:capitalize;
+    padding:1%;
+    color: #fff;
+    border: 1px solid;
+    border-color: transparent;
+    text-decoration:none;
+}
+#tagcloud a:visited {
+    text-transform:capitalize;
+    padding:1%;
+    color: #fff;
+    border: 1px solid;
+    border-color: transparent;
+}
+#tagcloud a:hover {
+    padding:1%;
+    border: 1px solid;
+    border-color: #fff;
+}

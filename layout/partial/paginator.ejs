@@ -1,0 +1,15 @@
+<% if (page.total > 1){ %>
+    <nav style="text-decoration: none;">
+    <%- paginator({
+        prev_text: '<v-btn outlined fab small color="white lighten-1"><v-icon>mdi-arrow-left</v-icon></v-btn>',
+        prev_class: 'ma-5 v-btn  v-btn--round',
+        next_text: '<v-btn outlined fab small color="white lighten-1"><v-icon>mdi-arrow-right</v-icon></v-btn>',
+        next_class: 'ma-5 v-btn  v-btn--round',
+        page_class: 'ma-5 white--text v-btn v-btn--fab v-btn--outlined v-btn--round theme--light v-size--small',
+        current_class:'ma-5 white--text v-btn v-btn--fab v-btn--outlined v-btn--round theme--light v-size--default',
+        space: '',
+        escape: false,
+        end_size: 0
+    }) %>
+    </nav>
+<% } %>

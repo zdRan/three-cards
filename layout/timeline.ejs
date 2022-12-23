@@ -1,0 +1,29 @@
+<div>
+    <v-timeline dense >
+        <% site.posts.sort('date', -1).limit(site.posts.length).each(function(post){ %>
+        <v-timeline-item color="success lighten-1">
+            <v-card tile elevation="24"  href="<%= url_for(post.path) %> " >
+                <v-img height="200" class="white--text align-end" src=<%="/random/material-"+randomNum()+".png"%> gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)">
+                    <v-card-title style="margin-left:0.8%;"><%- post.title %></v-card-title>
+                    <v-card-subtitle  style="text-align: left;margin-left:0.8%;" class="white--text">
+                        <%- post.date.format('YYYY-MM-DD hh:mm:ss') %> 
+                    </v-card-subtitle>
+                    <v-divider style="margin-left:2%; margin-right: 2%;" class="success lighten-1"></v-divider>
+                    <v-card-text style="text-align: left;" class="white--text">
+                        <% if (post.tags && post.tags.length){ %>
+                            <% post.tags.forEach(function(tag){ %>	
+                                <v-btn text class="white--text" style="text-transform:capitalize;" href="/tags/<%-tag.name %>" ><%- tag.name %></v-btn>
+                            <%});%>
+                        <% } %>
+                    </v-card-text>
+                </v-img>
+            </v-card>
+        </v-timeline-item>
+        <% }); %>
+    </v-timeline>
+</div>
+<% 
+    function randomNum(){
+        return Math.floor(Math.random() *  + 19) + 1;
+    }
+ %> 
