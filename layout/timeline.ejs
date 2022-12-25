@@ -5,9 +5,9 @@
             <v-card tile elevation="24"  href="<%= url_for(post.path) %> " >
                 <v-img height="200" class="white--text align-end" src=<%="/random/material-"+randomNum()+".jpg"%> gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)">
                     <v-card-title style="margin-left:0.8%;"><%- post.title %></v-card-title>
-                    <v-card-subtitle  style="text-align: left;margin-left:0.8%;" class="white--text">
+                    <v-card-text  style="text-align: left;margin-left:0.8%;" class="white--text">
                         <%- post.date.format('YYYY-MM-DD hh:mm:ss') %> 
-                    </v-card-subtitle>
+                    </v-card-text>
                     <v-divider style="margin-left:2%; margin-right: 2%;" class="success lighten-1"></v-divider>
                     <v-card-text style="text-align: left;" class="white--text">
                         <% if (post.tags && post.tags.length){ %>
