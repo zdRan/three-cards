@@ -3,7 +3,7 @@
         <% site.posts.sort('date', -1).limit(site.posts.length).each(function(post){ %>
         <v-timeline-item color="success lighten-1">
             <v-card tile elevation="24"  href="<%= url_for(post.path) %> " >
-                <v-img height="200" class="white--text align-end" src=<%="/random/material-"+randomNum()+".png"%> gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)">
+                <v-img height="200" class="white--text align-end" src=<%="/random/material-"+randomNum()+".jpg"%> gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)">
                     <v-card-title style="margin-left:0.8%;"><%- post.title %></v-card-title>
                     <v-card-subtitle  style="text-align: left;margin-left:0.8%;" class="white--text">
                         <%- post.date.format('YYYY-MM-DD hh:mm:ss') %> 
@@ -24,6 +24,6 @@
 </div>
 <% 
     function randomNum(){
-        return Math.floor(Math.random() *  + 19) + 1;
+        return Math.floor(Math.random() *  + 35) + 1;
     }
  %> 
