@@ -3,8 +3,8 @@
 
 ## 一、效果图
 
-![首图](/resources/%E9%A6%96%E5%9B%BE.png)
-![博客图](/resources/%E5%8D%9A%E5%AE%A2%E5%9B%BE.png)
+![首图](/resources/%E9%A6%96%E5%9B%BE.jpg)
+![博客图](/resources/%E5%8D%9A%E5%AE%A2%E5%9B%BE.jpg)
 
 ## 二、如何使用
 进入到 hexo 的 theme 目录下。 clone 本项目
@@ -47,7 +47,7 @@ header:
       icon: cloud-outline
       href: /tags
 ```
-![标签云](/resources/%E6%A0%87%E7%AD%BE%E4%BA%91.png)
+![标签云](/resources/%E6%A0%87%E7%AD%BE%E4%BA%91.jpg)
 
 
 ### 2、配置时间轴
@@ -82,7 +82,7 @@ header:
       icon: timeline-text-outline
       href: /timeline
 ```
-![时间轴](/resources/%E6%97%B6%E9%97%B4%E8%BD%B4.png)
+![时间轴](/resources/%E6%97%B6%E9%97%B4%E8%BD%B4.jpg)
 
 ## 3、配置其他链接
  修改 three-cards 主题 _config.xml 文件
@@ -94,7 +94,7 @@ footer:
       href: https://github.com/zdRan/three-cards
 
  ```
- ![页脚](/resources/%E9%A1%B5%E8%84%9A.png)
+ ![页脚](/resources/%E9%A1%B5%E8%84%9A.jpg)
 
  ## 四、注意事项
  + 请使用 hexo 6.0 以上的版本
