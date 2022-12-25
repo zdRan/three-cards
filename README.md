@@ -6,7 +6,6 @@
 ![首图](/resources/%E9%A6%96%E5%9B%BE.png)
 ![博客图](/resources/%E5%8D%9A%E5%AE%A2%E5%9B%BE.png)
 
-
 ## 二、如何使用
 进入到 hexo 的 theme 目录下。 clone 本项目
 
@@ -39,6 +38,7 @@ type: tags
 修改 three-cards 主题 _config.xml 文件
 
 ```
+header:
   menus:
     - title: 首页
       icon: home-outline
@@ -70,6 +70,7 @@ type: timeline
 修改 three-cards 主题 _config.xml 文件
 
 ```
+header:
   menus:
     - title: 首页
       icon: home-outline
@@ -81,3 +82,19 @@ type: timeline
       icon: timeline-text-outline
       href: /timeline
 ```
+![时间轴](/resources/%E6%97%B6%E9%97%B4%E8%BD%B4.png)
+
+## 3、配置其他链接
+ 修改 three-cards 主题 _config.xml 文件
+
+ ```
+footer:
+  links:
+    - title: 我的GitHub
+      href: https://github.com/zdRan/three-cards
+
+ ```
+ ![页脚](/resources/%E9%A1%B5%E8%84%9A.png)
+
+ ## 四、注意事项
+ + 请使用 hexo 6.0 以上的版本
