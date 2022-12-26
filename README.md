@@ -3,7 +3,7 @@
 
 ## 一、效果图
 
-![首图](/resources/%E9%A6%96%E5%9B%BE.jpg)
+![首图](/resources/首图.jpg)
 ![博客图](/resources/%E5%8D%9A%E5%AE%A2%E5%9B%BE.jpg)
 
 ## 二、如何使用
