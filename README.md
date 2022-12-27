@@ -3,7 +3,7 @@
 
 ## 一、效果图
 
-![首图](https://github.com/zdRan/three-cards/blob/ec0cd13f86dcf67291b6d9ca8cf954fcdf3ae4bd/image/%E9%A6%96%E5%9B%BE.jpg)
+![首图](https://github.com/zdRan/three-cards/blob/main/image/%E9%A6%96%E5%9B%BE.jpg)
 ![博客图](./image/博客图.jpg)
 
 ## 二、如何使用
