@@ -33,11 +33,6 @@
     border-bottom: 1px solid #eee;
     border-color: #4caf50;
 }
-#post_container img {
-    width: 100%;
-    border-color: #4caf50;
-    border: 1px solid #4caf50;
-}
 
 #post_container a:link {
     color: #03A9F4;
@@ -54,8 +49,16 @@
 }
 #post_container code {
     margin-bottom: 1%;
+    font-size: 110%;
+    background: #333;
+    color: #fff;
+    font-family: Consolas, Monaco, monospace;
 }
-
+#post_container img {
+    border: 1px solid;
+    border-color: #69cb69;
+    text-align: center;
+}
 #app {
     background-image: url("/images/background.jpg");
     background-size:100% 100%;
@@ -86,4 +89,9 @@
     padding:1%;
     border: 1px solid;
     border-color: #fff;
+}
+.v-application--wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
